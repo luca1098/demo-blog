@@ -25,6 +25,22 @@ module.exports = {
         name: `posts`,
         path: `${__dirname}/src/posts/`,},
     },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve:`gatsby-plugin-mdx`,
+      options:{
+        exstensions: [`.md`, `.mdx`],
+        gatsbyRemarkPlugins: [
+          {
+            resolve:`gatsby-remark-images`,
+            options:{
+              maxWidth:1200,
+            },
+          },
+        ],
+      },
+    },
 
   ],
 }
