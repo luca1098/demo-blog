@@ -27,6 +27,7 @@ module.exports = {
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    //plugin mdx e remark images
     {
       resolve:`gatsby-plugin-mdx`,
       options:{
@@ -40,6 +41,20 @@ module.exports = {
           },
         ],
       },
+    },
+    //google font
+    {
+      resolve:`gatsby-plugin-google-fonts`,
+      options:{
+        font:[
+          `poppins\:700,700i`,
+          `roboto\:400,400i,500,500i`,
+
+        ],
+        display:'swap',
+
+        
+      }
     },
 
   ],
