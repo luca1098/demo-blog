@@ -6,6 +6,7 @@ export default {
     color :{
         primary: "#2680EB",
         title: "#1c1c1",
+        testo:"41434A",
 
     }
 }
