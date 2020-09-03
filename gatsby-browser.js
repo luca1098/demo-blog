@@ -16,6 +16,12 @@ const GlobalStyle = createGlobalStyle`
         font-family:${props => props.theme.fonts.title};
         color:${props => props.theme.color.title};
     }
+    a {
+        color:${props => props.theme.color.testo};
+        text-decoration:none;
+        font-weight:700
+    }
+   
 `
 export const wrapRootElement = ({element}) => (
     <ThemeProvider theme={Theme}>

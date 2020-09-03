@@ -25,6 +25,17 @@ module.exports = {
         name: `posts`,
         path: `${__dirname}/src/posts/`,},
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data/`,
+        ignore: [`**/\.*`], // ignore files starting with a dot
+      },
+    },
+    
+
+    `gatsby-transformer-yaml`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     //plugin mdx e remark images
